@@ -3,6 +3,7 @@ import Home from './Home'
 import About from './About'
 import Contact from './Contact'
 import Error from './Error'
+import UseEffect from './UseEffect'
 const App = () => {
   return (
 <BrowserRouter>
@@ -12,6 +13,7 @@ const App = () => {
     <Route path='/about' element={<About/>} />
     <Route path='/contact' element={<Contact/>} />
     <Route path='*' element={<Error/>} />
+    <Route path='/useEffect' element={<UseEffect/>}/>
 
   
 

@@ -5,6 +5,7 @@ function Home () {
       < Button name="Register" / >
         < Button name="Login" / >
         < Button name="Logout" / > 
+        < Button name="Contact Us" / >
         </>
     )
 }

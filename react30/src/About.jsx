@@ -2,19 +2,13 @@ import React, { useState } from "react"
 
 
 function About () {
-    const state = useState(0)
-    const firstvalue = state[0]
-    const secondvalue = state[1]
-        const increasecount=()=>{
-        secondvalue (firstvalue + 1)
-      
-    }
+    const [Num,setNum] = useState(0)
     return (
         <div>
-            <h1>{firstvalue}</h1>
-     <button onClick={increasecount}>Increment</button>
-     <button onClick={()=>secondvalue (firstvalue - 1)}>Decrement</button>
-     <button onClick={()=>secondvalue (0)}>Reset</button>
+        <h1>{Num}</h1>
+     <button onClick={()=>setNum (Num + 1)}>Increment</button>
+     <button onClick={()=>setNum (Num - 1)}>Decrement</button>
+     <button onClick={()=>setNum (0)}>Reset</button>
         </div>
     )
 }
